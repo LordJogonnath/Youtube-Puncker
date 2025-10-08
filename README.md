@@ -1,8 +1,13 @@
 This extension:
-1. Detects when you are on incognito mode and redirects you to a locally hosted custom funny webpage when you go to youtube.
-2. Instead of the home page, the subscriptions page is brought upfront.
+1. Removes Youtube Shorts from your homepage!
+2. Detects when you are on incognito mode and redirects you to a locally hosted custom funny webpage when you go to youtube.
+3. Instead of the home page, the subscriptions page is brought upfront.
 
-You need to run a simple self hosted server for this. To do this, type into the terminal:
+This README is only for the incognito redirection. The other two features (no-shorts and only-subscription) work without any setup.
+
+Redirection in Incognito
+---
+You need to run a simple self hosted server for this.  To do this, type into the terminal:
 
 1. On Windows: python -m http.server 8000
 2. On Linux/macOS: python3 -m http.server 8000
