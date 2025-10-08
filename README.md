@@ -13,14 +13,16 @@ Take the files from the main branch into a folder and load this folder in your b
 
 PS: I made this for Vivaldi and Edge. It should work on all Chromium based browsers, though. 
 
+Automate the process!
 ---
-You can also write a .bat/bassh script for opening the terminal and running the python command on every sign in, into your computer. That way, you don't need to worry about 
+
+You can also write a .bat script for opening the terminal and running the python command on every sign in, into your computer. That way, you don't need to worry about 
 activating this extension every time you start your computer. You can work distraction free anytime.
 
 To do that:
 1. Place the .bat file into the Windows startup folder.
 2. Access the folder by running shell:startup in the Run Window (Win + R)
-3. A similar process should be there for Linux. Once I try it out, I will update this.
+3. A similar process should be there for Linux, but with a bash script. Once I try it out, I will update this.
 
 ---
 A fun personal project that I undertook. 
