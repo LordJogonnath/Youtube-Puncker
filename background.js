@@ -4,7 +4,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   const url = tab.url || '';
 
   if (tab.incognito && url.includes('youtube.com')) {
-    chrome.tabs.update(tabId, { url: 'http://localhost:8000/blocked.html' });
+    chrome.tabs.update(tabId, { url: 'https://youtubepuncked.netlify.app' });
     return;
   } 
 

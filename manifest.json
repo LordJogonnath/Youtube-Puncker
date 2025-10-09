@@ -1,16 +1,23 @@
 {
   "manifest_version": 3,
   "name": "YouTube Puncker",
-  "version": "2.0",
+  "version": "3.0",
   "description": "Redirects YouTube to a funny custom page instead.",
   "permissions": ["tabs"],
   "host_permissions": ["*://*.youtube.com/*"],
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["shortremover.js"],
+      "run_at": "document_idle"
+    }
+  ],
   "web_accessible_resources": [
     {
-      "resources": ["blocked.html", "bg.png"],
+      "resources": ["index.html", "bg.png"],
       "matches": ["<all_urls>"]
     }
   ],
